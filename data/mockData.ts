@@ -1,10 +1,10 @@
 import { Transaction, DashboardSummary, User } from '@/types/dashboard';
 
 export const mockUsers: User[] = [
-  { id: '1', name: 'Ava', avatar: '/placeholder.svg?height=32&width=32' },
-  { id: '2', name: 'Liam', avatar: '/placeholder.svg?height=32&width=32' },
-  { id: '3', name: 'Noah', avatar: '/placeholder.svg?height=32&width=32' },
-  { id: '4', name: 'Emma', avatar: '/placeholder.svg?height=32&width=32' },
+  { id: '1', name: 'Ava', avatar: '/avatar-img.png' },
+  { id: '2', name: 'Liam', avatar: '/avatar-img2.png' },
+  { id: '3', name: 'Noah', avatar: '/avatar-img3.png' },
+  { id: '4', name: 'Emma', avatar: '/avatar-img4.png' },
 ];
 
 export const mockTransactions: Transaction[] = [

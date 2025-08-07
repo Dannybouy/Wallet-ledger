@@ -68,7 +68,7 @@ export function TransactionTable({ transactions, loading = false }: TransactionT
   }
 
   return (
-    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+    <div className="bg-white rounded-lg  overflow-hidden">
       <div className="overflow-x-auto">
         <table className="w-full">
           <thead className="bg-gray-50 border-b border-gray-200">
@@ -115,12 +115,12 @@ export function TransactionTable({ transactions, loading = false }: TransactionT
                   {transaction.currency}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center gap-2 bg-[#346F6F]/10 text-[#1B2528] rounded-full w-fit px-3 py-1.5">
                     <div className={cn(
                       "w-2 h-2 rounded-full",
                       transaction.type === 'Credit' ? 'bg-green-500' : 'bg-red-500'
                     )}></div>
-                    <span className="text-sm text-gray-900">{transaction.type}</span>
+                    <span className="text-sm text-gray-900 font-medium">{transaction.type}</span>
                   </div>
                 </td>
               </tr>

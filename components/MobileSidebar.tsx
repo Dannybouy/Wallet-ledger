@@ -20,7 +20,7 @@ export function MobileSidebar({ isOpen, onOpenChange, activeItem = 'dashboard' }
   return (
     <Sheet open={isOpen} onOpenChange={onOpenChange}>
       <SheetContent side="left" className="w-64 p-0 bg-white">
-        <nav className="p-4 space-y-2 mt-4">
+        <nav className="p-4 space-y-2 mt-8">
           {menuItems.map((item) => {
             const isActive = item.id === activeItem;
             
