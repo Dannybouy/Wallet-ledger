@@ -32,7 +32,7 @@ A comprehensive, responsive wallet ledger dashboard built with React, TypeScript
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/Dannybouy/Wallet-ledger.git)
 cd wallet-ledger-dashboard
 ```
 
