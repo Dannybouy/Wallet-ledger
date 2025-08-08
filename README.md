@@ -26,35 +26,31 @@ A comprehensive, responsive wallet ledger dashboard built with React, TypeScript
 ### Prerequisites
 
 - Node.js 18+ 
-- npm or yarn
+- pnpm
 
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd wallet-ledger-dashboard
-\`\`\`
+```
 
 2. Install dependencies:
-\`\`\`bash
-npm install
-# or
-yarn install
-\`\`\`
+```bash
+pnpm install
+```
 
 3. Run the development server:
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-\`\`\`
+```bash
+pnpm run dev
+```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Structure
 
-\`\`\`
+```
 ├── app/                    # Next.js app directory
 │   ├── globals.css        # Global styles
 │   ├── layout.tsx         # Root layout
@@ -72,7 +68,7 @@ yarn dev
 │   └── dashboard.ts      # Dashboard-related interfaces
 └── lib/                  # Utility functions
     └── utils.ts          # Common utilities
-\`\`\`
+```
 
 ## Key Components
 
@@ -105,7 +101,7 @@ yarn dev
 ## Data Structure
 
 ### Transaction Interface
-\`\`\`typescript
+```typescript
 interface Transaction {
   id: string;
   date: string; // YYYY-MM-DD
@@ -114,10 +110,10 @@ interface Transaction {
   currency: string;
   type: 'Credit' | 'Debit';
 }
-\`\`\`
+```
 
 ### Dashboard Summary
-\`\`\`typescript
+```typescript
 interface DashboardSummary {
   totalBalance: number;
   totalCredits: number;
@@ -128,7 +124,7 @@ interface DashboardSummary {
   debitsChange: number;
   transactionChange: number;
 }
-\`\`\`
+```
 
 ## Customization
 
@@ -149,21 +145,3 @@ interface DashboardSummary {
 - **Image Optimization**: Next.js Image component used for avatars and assets
 - **Bundle Splitting**: Automatic code splitting via Next.js
 
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License.
