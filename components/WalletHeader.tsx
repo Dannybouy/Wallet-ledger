@@ -1,8 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { User } from "@/types/dashboard";
-import { ChevronDown, MoreHorizontal, Share } from "lucide-react";
+import { MoreHorizontal } from "lucide-react";
 import { Icons } from "./Icons";
 
 interface WalletHeaderProps {
@@ -29,22 +28,16 @@ export function WalletHeader({ users }: WalletHeaderProps) {
             Active
           </Badge>
         </div>
-        
+
         <div className="flex items-center space-x-2">
-          <Button
-            variant="outline"
-            size="default"
-            className="text-black bg-[#4B8B9F] rounded-full border-none hover:bg-[#4B8B9F] hover:text-white"
-          >
+          <button className="bg-[#34616F] inline-block text-sm lg:text-base py-1 px-2 lg:px-3 rounded-full text-white hover:bg-[#4B8B9F]/50">
             Share
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            className="rounded-2xl border-2"
+          </button>
+          <button
+            className="inline-block text-sm lg:text-base py-1 px-2 rounded-2xl border-2"
           >
-            <MoreHorizontal className="w-4 h-4" />
-          </Button>
+            <MoreHorizontal className="size-4 lg:size-5" />
+          </button>
         </div>
       </div>
 

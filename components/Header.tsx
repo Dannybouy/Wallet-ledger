@@ -43,9 +43,9 @@ export function Header({ onMenuClick }: HeaderProps) {
         {/* Right Section - User Avatar */}
         <div className="flex items-center gap-2">
           <SearchIcon className="w-6 h-6 text-[#1B2528]" />
-          <Button variant="ghost" className="w-6 h-6">
-            <Icons.appGrid />
-          </Button>
+
+          <Icons.appGrid size={24} />
+
           <Avatar className="w-10 h-10">
             <AvatarImage src="/avatar-img.png" width={80} height={80} />
             <AvatarFallback className="bg-gray-100">
